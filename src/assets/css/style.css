@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 26px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    overflow-y: visible;
+    background: rgba(128, 128, 128, 0.25);
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    background: #fff;
+    margin: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.item:hover {
+    border: 1px solid #5d75ff;
+}
+
+.item .title {
+    padding: 20px;
+    font-size: 22px;
+}
+
+.item .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.option span {
+    font-size: 18px;
+    color: #808080;
+    margin-right: 7px;
+}
+
+.option p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.item .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.item .footer span {
+    font-size: 14px;
+    color: #808080;
+}
